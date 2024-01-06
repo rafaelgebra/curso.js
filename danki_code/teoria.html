@@ -1,0 +1,50 @@
+    Capitulo1 - Aula 2
+
+    Variável em JavaScript
+
+Para delarar uma Variável em JavaScript
+
+    No JavaScript tem três(3) tipos de Variável.
+        var     = Variável Global.
+        let     = Variável Local.
+        const   = Variável "fixa" não tem como alterar.
+
+        Ex 1 :  VAR
+        <script>
+            var nome = 'Guilherme';
+            nome = 'João';
+
+            console.log(nome);
+
+            //O resultado da impressão no navegador será, João. Porque foi alterado o nome de Guilherme para João.
+        </script>
+
+        Ex 2:   Let
+        <script>
+        //Como a Variável lef é local, ela não será impressa no navegador se console.log() estiver fora do escopo.
+
+            /*Não funciona/imprime:*/
+            {
+                let idade = 27;
+            }
+            console.log(idade);
+
+            /*funciona/imprime:*/
+            {
+                let idade = 27;
+                console.local(idade);
+            }
+        </script>
+
+        Ex 3:   Const
+        <script>
+            /*Não funciona/imprime:*/
+            const nome = 'Guilherme';
+            nome = 'João';/*Essa alteração não acontece porque a variável const não permite alteração (imutável)*/
+            console.log(nome);
+
+            /*Funciona/imprime*/
+            const nome = 'Guilherme';
+            console.log(nome);
+
+        </script>
