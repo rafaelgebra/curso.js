@@ -10,61 +10,189 @@ Para delarar uma Variável em JavaScript
         const   = Variável "fixa" não tem como alterar.
 
         Ex 1 :  VAR
-        <script>
-            var nome = 'Guilherme';
-            nome = 'João';
+    <script>
+        var nome = 'Guilherme';
+        nome = 'João';
 
-            console.log(nome);
+        console.log(nome);
 
-            //O resultado da impressão no navegador será, João. Porque foi alterado o nome de Guilherme para João.
-        </script>
+        //O resultado da impressão no navegador será, João. Porque foi alterado o nome de Guilherme para João.
+    </script>
 
-        Ex 2:   Let
-        <script>
-        //Como a Variável lef é local, ela não será impressa no navegador se console.log() estiver fora do escopo.
+    Ex 2:   Let
+    <script>
+    //Como a Variável lef é local, ela não será impressa no navegador se console.log() estiver fora do escopo.
 
-            /*Não funciona/imprime:*/
-            {
-                let idade = 27;
-            }
-            console.log(idade);
+        /*Não funciona/imprime:*/
+        {
+            let idade = 27;
+        }
+        console.log(idade);
 
-            /*funciona/imprime:*/
-            {
-                let idade = 27;
-                console.local(idade);
-            }
-        </script>
+        /*funciona/imprime:*/
+        {
+            let idade = 27;
+            console.local(idade);
+        }
+    </script>
 
         Ex 3:   Const
-        <script>
-            /*Não funciona/imprime:*/
-            const nome = 'Guilherme';
-            nome = 'João';/*Essa alteração não acontece porque a variável const não permite alteração (imutável)*/
-            console.log(nome);
 
-            /*Funciona/imprime*/
-            const nome = 'Guilherme';
-            console.log(nome);
+<script>
+    /*Não funciona/imprime:*/
+    const nome = 'Guilherme';
+    nome = 'João';/*Essa alteração não acontece porque a variável const não permite alteração (imutável)*/
+    console.log(nome);
 
-        </script>
-<!--    Arrays como funciona - estudo básico    -->
-        <script>
-            //Arrays é nada mais e nada menos do que uma variável com varias variáveis cada uma delas ocupando um espacinho na memória do computador.
-            var nome = ['Guilherme', 'João', 'Felipe']
-            console.log(nome[0]);
-            console.log(nome[1]);
-            console.log(nome[2]);
-            console.log(nome);
-            // Para trocar o "valor" da array é so seguir os seguintes passos
-            // A alteração tem que estar antes da "impressão na tela"
-            nome[0] = 'Rafael'
-            console.log(nome[0]);
-            // O resultado disso é a troca do nome na tela.
+    /*Funciona/imprime*/
+    const nome = 'Guilherme';
+    console.log(nome);
 
-            // Para dicionar um valor/conteúdo na array é só usar função push(). É adicionado na ultima posição da array
-            nome.push('Thatiane');
-            console.log(nome[3]);
-            console.log(nome);
-        </script>
-<!--    Condiçôes em JS     -->
+</script>
+                    <!--    Arrays como funciona - estudo básico    -->
+<script>
+    //Arrays é nada mais e nada menos do que uma variável com varias variáveis cada uma delas ocupando um espacinho na memória do computador.
+    var nome = ['Guilherme', 'João', 'Felipe']
+    console.log(nome[0]);
+    console.log(nome[1]);
+    console.log(nome[2]);
+    console.log(nome);
+    // Para trocar o "valor" da array é so seguir os seguintes passos
+    // A alteração tem que estar antes da "impressão na tela"
+    nome[0] = 'Rafael'
+    console.log(nome[0]);
+    // O resultado disso é a troca do nome na tela.
+
+    // Para dicionar um valor/conteúdo na array é só usar função push(). É adicionado na ultima posição da array
+    nome.push('Thatiane');
+    console.log(nome[3]);
+    console.log(nome);
+</script>
+                    <!--    Condiçôes em JS     -->
+
+<script>
+    //Em JS é escrita assim as CONDIÇÕES
+    //Depois da condição if() ou else() usar os parenteses e logo depois inserir as chaves {} 
+
+    var nome = 'Rafael'
+    if(nome == 'Guilherme'){
+        console.log('Usando o if constatou que o nome é', nome)
+    }
+    else if(nome == 'Felipe'){
+        console.log('Usando o else if constatou que o nome é', nome )
+    }
+    else{
+        console.log('Usando o else constatou que o nome é', nome)
+    }
+
+     // >=   -> Significa MAIOR ou IGUAL
+        // >    -> Significa MAIOR
+        // <=   -> Significa MENOR ou IGUAL
+        // <    -> Significa MENOR
+        // ==   -> Significa IGUAL
+        // !=   -> Signifca DIFEFENTE
+
+        // &&    -> Significa E
+        // ||   -> Significa OU
+
+        //Ex:
+        var nome = 'Rafael'
+        var idade = 35
+        if(nome == 'Guilerme' || idade == 35){
+            console.log('condição verdadeira')
+        }
+        else if(nome != 'Rafael' && idade == 34){
+            console.log('Condição falsa')
+        }
+        else{
+            console.log('Erro. Tente novamente')
+        }
+</script>
+
+                          <!--       Funções em JS       -->
+
+<script>
+    //Funções em JS
+    //A função é executada quando for chamada a função.
+    //Ex:
+
+    function teste(){
+        console.log('Teste de funcionamento de função, teste()')
+    }
+
+    function teste2(nome, idade){
+        console.log('O nome passado é', nome, 'e a idade é: ', idade)
+        console.log('')
+    }
+
+    //Função de retorno dados
+    //Quando retorna o valor por return a função é interrompida. O restante da função não é executada
+    function pegarnome(nome){
+        return 'Gato'
+        if(nome == 'Gato'){
+            console.log('Teste, OK')
+        }
+    }
+    
+    teste();
+    teste2('Rafael', 35)
+
+    teste2('Thatine', 26)
+
+    var nome = pegarnome('Gato')
+
+    console.log(nome)
+
+</script>
+
+                            <!--        Funções parte 2         -->
+
+<script>
+
+    //Outra forma de declarar função
+    // Não se limita apenas a VAR, também pode ser usado a LET e CONST
+    var func = function(nome){
+        if(nome == 'Rafael')
+            console.log('O teste deu certo')
+            //alert('O teste deu certo')
+        else{
+            console.log('Nome errado')
+            //alert('Nome errado')
+        }
+    }
+    var nome2 = 'Thatiane'
+    func(nome2)
+
+    //
+    alert('Usar a função sem a nescessidade de "chamala" não esta funcionando.')
+    (function(){
+        alert('Olá troxa!!!!!')
+    })();
+
+</script>
+
+                                <!--    Aula 7 - Laços de repetição WHILE, FOR e DO      -->
+<script>
+    var n = 0;
+    console.log('Usando a repetição com WHILE')
+    while(n < 3){
+        console.log(n);
+        n++;
+    }
+    console.log('Usando a repetição com FOR')
+    for(var i = 0; i <= 3; i++){
+        console.log(i)
+    }
+    console.log('Usando a repetição com DO')
+    //O DO quase não é usado é mais "dificio" de usar
+    //E o laço de repetição DO é executado mesno sem "conferência" de informação
+    var num = 0
+    do{
+        console.log(num);
+        num++;
+
+    }while(num <= 3);
+
+</script>
+
+                                <!--    Aula 8 ForEach      -->

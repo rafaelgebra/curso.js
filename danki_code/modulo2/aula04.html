@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições em JS</title>
+</head>
+<body>
+    <script>
+
+           //Em JS é escrita assim as CONDIÇÕES
+    //Depois da condição if() ou else() usar os parenteses e logo depois inserir as chaves {} 
+
+    var nome = 'Rafael'
+    if(nome == 'Guilherme'){
+        console.log('Usando o if constatou que o nome é', nome)
+    }
+    else if(nome == 'Felipe'){
+        console.log('Usando o else if constatou que o nome é', nome )
+    }
+    else{
+        console.log('Usando o else constatou que o nome é', nome)
+    }
+
+     // >=   -> Significa MAIOR ou IGUAL
+        // >    -> Significa MAIOR
+        // <=   -> Significa MENOR ou IGUAL
+        // <    -> Significa MENOR
+        // ==   -> Significa IGUAL
+        // !=   -> Signifca DIFEFENTE
+
+        // &&    -> Significa E
+        // ||   -> Significa OU
+
+        //Ex:
+        var nome = 'Rafael'
+        var idade = 35
+        if(nome == 'Guilerme' || idade == 35){
+            console.log('condição verdadeira')
+        }
+        else if(nome != 'Rafael' && idade == 34){
+            console.log('Condição falsa')
+        }
+        else{
+            console.log('Erro. Tente novamente')
+        }
+
+
+    </script>
+    
+</body>
+</html>
