@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex002 Cálculo de idade</title>
+</head>
+<body>
+    <script>
+        var ano_nascimento = prompt('Qual a sua data de nascimento')
+        while(true){
+            if(ano_nascimento < 2024){
+                break
+            }
+            else{
+                alert('Ano de nascimento não pode ser maior que o ano atual')
+                var ano_nascimento = prompt('Qual a sua data de nascimento')
+                }
+        }     
+        var ano_atual = prompt('Qual é o ano atual? ')
+        while(true){
+            if(ano_atual == 2024){
+                break
+            }
+            else{
+                alert('Ano atual errado. Tente novamente.')
+                var ano_atual = prompt('Qual é o ano atual? ')
+            }
+        }
+        var idade = ano_atual - ano_nascimento
+        alert('A sua idade é ' + idade)
+    </script>
+
+</body>
+</html>
