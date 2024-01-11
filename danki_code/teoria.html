@@ -196,3 +196,18 @@ Para delarar uma Variável em JavaScript
 </script>
 
                                 <!--    Aula 8 ForEach      -->
+
+<Script>
+    //Forma tradicional de fazer um loop em uma array
+    var arr = ['Rafael', 'Thatiane']
+    for(var i = 0; i < arr.length; i++){
+        console.log(i)
+}
+
+    //Agora fazendo um loop com a função forEach()
+    //Com o forEach facilita em conseguir fazer um for e já trás o indice da lista
+    arr.forEach(function(value, index){
+        console.log('O nome', value, 'está no posição', index)
+    });
+
+</Script>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForEach</title>
+</head>
+<body>
+    
+    <Script>
+        //Forma tradicional de fazer um loop em uma array
+        var arr = ['Rafael', 'Thatiane']
+        for(var i = 0; i < arr.length; i++){
+            console.log(i)
+    }
+
+        //Agora fazendo um loop com a função forEach()
+        //Com o forEach facilita em conseguir fazer um for e já trás o indice da lista
+        arr.forEach(function(value, index){
+            console.log('O nome', value, 'está no posição', index)
+        });
+
+    </Script>
+
+</body>
+</html>
