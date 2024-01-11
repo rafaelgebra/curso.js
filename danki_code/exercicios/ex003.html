@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex003 Calculadora dinâminca</title>
+</head>
+<body>
+    <script>
+        var numero_inicial = prompt('Informe o primeiro número: ')
+        var sinal = prompt('Informe o sinal da operação: ')
+        while(sinal != '+' && sinal != '-' && sinal != '/' && sinal != '*'){
+            alert('Opção invalida. Tente novamente!!')
+            var sinal = prompt('Informe o sinal da operação: ')
+        }
+        var numero_final = prompt('Informe o número final: ')
+        numero_inicial = parseInt(numero_inicial)
+        numero_final = parseInt(numero_final)
+        var resultado = 0
+        if(sinal == '+'){   
+            resultado = numero_inicial + numero_final
+        }
+        else if(sinal == '-'){
+            resultado = numero_inicial - numero_final
+        }
+        else if(sinal == '/'){
+            resultado = numero_inicial / numero_final
+        }
+        else if(sinal == '*'){
+            resultado = numero_inicial * numero_final
+        }
+        alert(resultado)
+    </script>
+</body>
+</html>
