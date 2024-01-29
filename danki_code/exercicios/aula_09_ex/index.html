@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex009</title>
+</head>
+<body>
+    <script>
+        console.log('Resultado do exercío 01');
+
+        const primeiraVariavel = 2148; // A Variável const não consegue/pode ser alterada apos a inicialização.
+        let segundaVariavel; // A variável let pode ser alterada após a sua inicialização
+
+        console.log(`O valor da primeira variável é ${primeiraVariavel}`);
+        segundaVariavel = 23;
+        console.log(`Minha segunda variável vale ${segundaVariavel}`);
+        console.log(`A soma das minhas duas variáveis é ${primeiraVariavel + segundaVariavel}`);
+        console.log(`Uma forma de fazer o exercicio ${(segundaVariavel**2) / 3}`)
+        segundaVariavel = (segundaVariavel ** 2) / 3;
+        console.log(`Segunda forma de fazer o exercicio ${segundaVariavel}`)
+        
+        console.log(`Resultado do exercicio 2`)
+
+        const variavelVerdadeiro = true;
+        const variavelFalse = false;
+        
+        console.log(`Operação AND entre as duas variáveis: ${variavelVerdadeiro && variavelFalse}`);
+        console.log(`Operação AND entre as duas variáveis: ${variavelVerdadeiro || variavelFalse}`);
+
+        const variavelVerdaderoFalse = false;
+        console.log(`Operação AND entre as três variáveis: ${(variavelVerdadeiro && variavelFalse) && variavelVerdaderoFalse}`);
+        console.log(`Operação AND entre as três variáveis: ${(variavelVerdadeiro || variavelFalse) || variavelVerdaderoFalse}`);
+
+    </script>
+</body>
+</html>
